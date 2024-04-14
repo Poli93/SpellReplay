@@ -1742,6 +1742,8 @@ ReplayFrame:SetScript("OnEvent", function(self, event, ...)
 				replayTexture[i]:SetTexture("Interface\\Icons\\INV_Misc_Gem_Sapphire_01")
 			elseif spellName == GetSpellInfo(16666) then -- Demonic rune
 				replayTexture[i]:SetTexture("Interface\\Icons\\INV_Misc_Rune_04")
+			elseif spellName == GetSpellInfo(54757) then -- Rocket Gloves
+				replayTexture[i]:SetTexture("Interface\\Icons\\Spell_Fire_Burnout")		
 			else
 				AuraDelayFrame:SetScript("OnUpdate", AuraDelay)
 			end
